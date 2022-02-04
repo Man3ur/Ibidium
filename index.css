@@ -1,27 +1,46 @@
 body {
     background-color: rgb(0, 0, 0);
-    font-family: 'Minecraft', sans-serif;
+    font-family: 'VT323', monospace;
+    color: white;
 }
 
 h1 {
     font-size: 90px;
-    font-family: 'Minecraft Ten';
     text-align: center;
     color: white;
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 80px;
     text-align: center;
-    margin-top: 260px;
+    margin-top: 120px;
     color: white;
 }
 
-h3 {
-    font-size: 70px;
+.ibi {
     text-align: center;
-    margin-top: -50px;
+}
+
+h3 {
+    font-size: 90px;
+    text-align: center;
+    margin-top: -65px;
     color: white;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 10%;
+    text-align: center;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titre {
+    text-align: center;
+    margin-top: 50px;
 }
 
 .navbar ul {
@@ -50,12 +69,4 @@ h3 {
 
 .navbar a:hover {
     background: transparent;
-}
-
-@font-face {
-    font-family: 'Minecraft Ten';
-    src: url('/font/MinecraftTen.woff') format('woff2'), url('/font/MinecraftTen.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
 }
