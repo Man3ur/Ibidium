@@ -1,3 +1,11 @@
+const loader = document.querySelector('.loader');
+
+window.addEventListener('load', () => {
+
+    loader.classList.add('fondu-out');
+
+})
+
 $(document).ready(function() {
     $(".hamburg").on("click", function() {
         $("nav ul").toggleClass("menu");
@@ -10,12 +18,4 @@ $(window).on("scroll", function() {
     } else {
         $('nav').removeClass('scroll');
     }
-})
-
-const loader = document.querySelector('.loader');
-
-window.addEventListener('load', () => {
-
-    loader.classList.add('fondu-out');
-
 })
