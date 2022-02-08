@@ -61,6 +61,16 @@ nav.scroll ul {
 @media(max-width: 692px) {
     .hamburg {
         display: block;
+        width: 59.3%;
+    }
+    .intro {
+        font-size: 10px;
+    }
+    .introtxt {
+        text-align: center;
+        margin-top: -130px;
+        width: 100%;
+        height: auto;
     }
     nav ul {
         max-height: 0px;
@@ -72,6 +82,7 @@ nav.scroll ul {
     }
     .menu {
         max-height: 10em;
+        width: 59.3%;
     }
     nav ul li {
         width: 100%;
@@ -79,9 +90,6 @@ nav.scroll ul {
     }
     nav.scroll ul {
         background-color: rgb(0, 0, 0);
-    }
-    .testa {
-        text-align: left;
     }
     header {
         width: 100%;
@@ -106,10 +114,6 @@ h2 {
     color: white;
 }
 
-.ibi {
-    text-align: center;
-}
-
 .navbar-logo {
     margin-top: -100px;
 }
@@ -132,9 +136,14 @@ h5 {
     font-size: 100px;
 }
 
-.titre {
+.intro {
     text-align: center;
-    margin-top: -750px;
+    margin-top: -530px;
+}
+
+.introtxt {
+    text-align: center;
+    margin-top: -130px;
 }
 
 .page1 {
