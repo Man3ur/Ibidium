@@ -68,16 +68,14 @@ nav.scroll ul {
 @media(max-width: 692px) {
     .hamburg {
         display: block;
-        width: 59.3%;
+        width: 100%;
     }
     .intro {
-        font-size: 10px;
-    }
-    .introtxt {
         text-align: center;
-        margin-top: -130px;
-        width: 100%;
-        height: auto;
+        margin-top: -800px;
+    }
+    .titre {
+        margin-top: 100px;
     }
     nav ul {
         max-height: 0px;
@@ -88,8 +86,8 @@ nav.scroll ul {
         margin-top: -1px;
     }
     .menu {
-        max-height: 10em;
-        width: 59.3%;
+        max-height: 9em;
+        width: 100%;
     }
     nav ul li {
         width: 100%;
@@ -102,6 +100,19 @@ nav.scroll ul {
         width: 100%;
         background: url(https://www.minecraft-france.fr/wp-content/uploads/2015/12/1421958294-herobrine.png) no-repeat 50% 50%;
         background-size: cover;
+    }
+    .container {
+        margin-right: 50%;
+        cursor: pointer;
+        transform: translate(50%);
+    }
+    .download {
+        display: inline-block;
+        font-size: 40px;
+        font-weight: 600;
+        height: 70px;
+        overflow: hidden;
+        transition: .3s ease-in-out;
     }
 }
 
@@ -253,8 +264,7 @@ p {
 }
 
 .container {
-    margin-top: -50px;
-    margin-right: 950px;
+    margin-right: 50%;
     cursor: pointer;
     transform: translate(50%);
 }
