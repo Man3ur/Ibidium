@@ -5,6 +5,13 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    text-align: center;
+}
+
+* {
+    text-decoration: none;
+    color: white;
+    text-align: center;
 }
 
 
@@ -127,7 +134,7 @@ h3 {
 
 h4 {
     font-family: Arial, Helvetica, sans-serif;
-    opacity: 10%;
+    opacity: 20%;
     text-align: center;
 }
 
@@ -138,12 +145,11 @@ h5 {
 
 .intro {
     text-align: center;
-    margin-top: -530px;
+    margin-top: -500px;
 }
 
-.introtxt {
-    text-align: center;
-    margin-top: -130px;
+.titre {
+    margin-top: -100px;
 }
 
 .page1 {
@@ -234,4 +240,41 @@ p {
 .fondu-out {
     opacity: 0;
     transition: opacity 0.4s ease-out;
+}
+
+.top,
+.bottom {
+    display: block;
+    padding: 0 30px;
+    line-height: 70px;
+    transition: .3 margin linear;
+}
+
+.icon {
+    margin-right: 15px;
+}
+
+.container {
+    margin-top: -50px;
+    margin-right: 625px;
+    cursor: pointer;
+    transform: translate(50%);
+}
+
+.download {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    height: 70px;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+
+.download:hover {
+    transform: translateY(-4px);
+    box-shadow: 3px 3px 5px #a3a3a3;
+}
+
+.download:hover .top {
+    margin-top: -70px;
 }
