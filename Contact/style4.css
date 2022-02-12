@@ -117,6 +117,7 @@ li {
 
 .navbar li {
     display: inline-block;
+    font-family: 'VT323', monospace;
 }
 
 .navbar a {
