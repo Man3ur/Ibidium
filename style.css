@@ -1,0 +1,452 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'VT323', monospace;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+* {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+
+/* nav bar*/
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(https://www.minecraft-france.fr/wp-content/uploads/2015/12/1421958294-herobrine.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    bottom: 86%;
+}
+
+nav ul {
+    padding: 0;
+    display: 0;
+    font-size: 50px;
+    text-align: center;
+    transition: 0.7s;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #606060;
+}
+
+nav.scroll ul {
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-btn {
+    display: none;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: right;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/*Hambuger*/
+
+@media(max-width: 1447px) {
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .menu-btn__burger {
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(red, green, blue, alpha);
+        transition: all .5s ease-in-out;
+    }
+    .menu-btn__burger::before,
+    .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(red, green, blue, alpha);
+        transition: all .5s ease-in-out;
+    }
+    .menu-btn__burger::before {
+        transform: translateY(-16px);
+    }
+    .menu-btn__burger::after {
+        transform: translateY(16px);
+    }
+    /*aniamation*/
+    .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+    .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+    nav ul {
+        max-height: 0px;
+        position: fixed;
+        background: #000;
+        width: 100%;
+        font-size: 40;
+        margin-top: -1px;
+    }
+    .menu {
+        max-height: 9em;
+        width: 100%;
+    }
+    nav ul li {
+        width: 100%;
+        padding: 24px 0;
+    }
+    nav.scroll ul {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+
+/*Hambuger*/
+
+
+/* nav bar*/
+
+h1 {
+    font-size: 90px;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 120px;
+    color: white;
+}
+
+.navbar-logo {
+    margin-top: -100px;
+}
+
+h3 {
+    font-size: 90px;
+    text-align: center;
+    margin-top: -65px;
+    color: white;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 20%;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.intro {
+    text-align: center;
+    margin-top: -800px;
+}
+
+.titre {
+    margin-top: 100px;
+}
+
+.page1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 50px;
+    color: black;
+}
+
+
+/*
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.lettre {
+    color: #484848;
+    font-size: 80px;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    animation: flash 1.2s linear infinite;
+}
+
+@keyframes flash {
+    0% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900;
+    }
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+    100% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900;
+    }
+}
+
+.lettre:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.lettre:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.lettre:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.lettre:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.lettre:nth-child(10) {
+    animation-delay: 1s;
+}
+
+.fondu-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.top,
+.bottom {
+    display: block;
+    padding: 0 30px;
+    line-height: 0 30px;
+    transition: .3 margin linear;
+}
+
+.icon {
+    margin-right: 15px;
+}
+
+.modal-btn-button {
+    margin-right: 50%;
+    cursor: pointer;
+    transform: translate(50%);
+}
+
+.modal-btn {
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 600;
+    height: 70px;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 3px 3px 5px #a3a3a3;
+}
+
+.modal-btn:hover .top {
+    margin-top: -70px;
+}
+
+.modal-btn {
+    font-size: 50px;
+    margin: 100px auto;
+    display: block;
+    min-width: 150px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    background-color: transparent;
+    font-family: 'VT323', monospace;
+}
+
+.modal-container {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: visibility 0.4s;
+}
+
+.modal-container.active {
+    visibility: visible;
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000d3;
+    transition: opacity 0.4s 0.2s ease-out;
+    font-size: cover;
+}
+
+.modal-container.active .overlay {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+
+.modal h1 {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal h2 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+}
+
+.modal h3 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+}
+
+.modal {
+    opacity: 0;
+    width: 50%;
+    max-width: 50%;
+    min-width: 50%;
+    padding: 20px;
+    background: rgb(63, 2, 87);
+    border-radius: 20% 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 50px));
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.modal-container.active .modal {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s 0.2s ease-out, transform 0.4s 0.2s ease-out;
+}
+
+.close-modal {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 100% 30px;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: #ff365e;
+    color: #fff;
+}
+
+.modal h1 {
+    margin-bottom: 10px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}
+
+.modal p {
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.container {
+    margin-top: 50px;
+    margin-right: 75%;
+    cursor: pointer;
+    transform: translate(50%);
+}
+
+.download {
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 600;
+    height: 90px;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+    text-align: center;
+}
+
+.download:hover {
+    transform: translateY(-4px);
+    box-shadow: 3px 3px 5px #a3a3a3;
+}
+
+.download:hover .top {
+    margin-top: -107px;
+    font-size: 55px;
+}
