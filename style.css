@@ -27,7 +27,7 @@ header {
 nav {
     position: fixed;
     width: 100%;
-    margin-top: -50px;
+    bottom: 86%;
 }
 
 nav ul {
@@ -52,6 +52,103 @@ nav ul li a {
 nav.scroll ul {
     background-color: rgb(255, 255, 255);
 }
+
+.menu-btn {
+    display: none;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: right;
+}
+
+
+/*Hambuger*/
+
+@media(max-width: 1447px) {
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+}
+
+.menu-btn__burger {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(red, green, blue, alpha);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(red, green, blue, alpha);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-16px);
+}
+
+.menu-btn__burger::after {
+    transform: translateY(16px);
+}
+
+
+/*aniamation*/
+
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+nav ul {
+    max-height: 0px;
+    position: fixed;
+    background: #000;
+    width: 100%;
+    font-size: 40;
+    margin-top: -1px;
+}
+
+.menu {
+    max-height: 9em;
+    width: 100%;
+}
+
+nav ul li {
+    width: 100%;
+    padding: 24px 0;
+}
+
+nav.scroll ul {
+    background-color: rgb(0, 0, 0);
+}
+
+
+/*Hambuger*/
 
 
 /* nav bar*/

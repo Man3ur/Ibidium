@@ -6,12 +6,6 @@ window.addEventListener('load', () => {
 
 })
 
-$(document).ready(function() {
-    $(".hamburg").on("click", function() {
-        $("nav ul").toggleClass("menu");
-    });
-});
-
 $(window).on("scroll", function() {
     if ($(window).scrollTop()) {
         $('nav').addClass('scroll');
@@ -28,3 +22,15 @@ modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
 function toggleModal() {
     modalContainer.classList.toggle("active")
 }
+
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+    if (!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+    } else {
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+    }
+});
