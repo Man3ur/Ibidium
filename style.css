@@ -21,6 +21,7 @@ header {
     background: url(https://www.minecraft-france.fr/wp-content/uploads/2015/12/1421958294-herobrine.png);
     width: 100%;
     height: 100vh;
+    background-size: cover;
 }
 
 nav {
@@ -89,6 +90,13 @@ nav.scroll ul {
     nav ul li {
         width: 100%;
         padding: 24px 0;
+    }
+    .hamburg {
+        width: 100%;
+        height: 7%;
+    }
+    .page1 h1 {
+        font-size: 30px;
     }
 }
 
