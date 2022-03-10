@@ -16,23 +16,23 @@
 
 <body>
     <header>
-        <!--<div id="particles-js" class="background"></div>
-        <div class="menu-btn">
-            <div class="menu-btn__burger"></div>
-        </div>-->
         <nav>
-            <div class="hamburg">
-                <img src="/assets/bars.png" height="999px" alt="error-img">
-            </div>
 
-            <ul>
-                <li> <a href="https://ibidium.tk/">Home</a> </li>
-                <li> <a href="/news">News</a> </li>
-                <li> <a href="/Shop">Shop</a> </li>
-                <li> <a href="/Support">Support</a> </li>
-            </ul>
+            <div class="hamburg">
+                <img src="/assets/bars.png" width="50" alt="error-img">
+
+                <div class="menu">
+                    <ul>
+                        <li> <a href="https://ibidium.tk/">Home</a> </li>
+                        <li> <a href="/news">News</a> </li>
+                        <li> <a href="/Shop">Shop</a> </li>
+                        <li> <a href="/Support">Support</a> </li>
+                    </ul>
+
+                </div>
         </nav>
     </header>
+
     <div class="intro"> <img class="bande" src="/Ibidium.png" alt="error Image">
         <div class="titre">
             <h2>join Ibidium </h2>
@@ -88,8 +88,24 @@
                 provident aut quas ratione porro tenetur. Praesentium illum labore deserunt fugit sed in saepe eaque! Quod quidem, quis laborum necessitatibus accusamus debitis illum sunt. Id non vero reiciendis nostrum impedit corrupti, consequatur error,
                 sequi eum quas ipsam incidunt, molestias uos doloremque tempore ab amet porro ipsum minima. Laboriosam ad corporis voluptatibus doloribus fuga! </p>
         </div>
-        <script src="/particles.js"></script>
-        <script src="/particles.min.jss"></script>
+        <script>
+            $(document).ready(function() {
+                $(".hamburg").on("click", function() {
+                    $("nav ul").toggleClass("menu");
+                });
+            });
+        </script>
+
+        <script>
+            // Fonction executée lors de l'utilisation du clic droit.
+            $(document).bind("contextmenu", function() {
+                // Si vous voulez ajouter un message d'alerte
+                alert("You can't click here");
+                // On indique au navigateur de ne pas réagir en cas de clic droit.
+                return false;
+            });
+        </script>
+
         <script src="/app.js"></script>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
