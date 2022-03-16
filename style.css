@@ -112,7 +112,8 @@ nav.scroll ul {
 
 @media(max-width: 800px) {
     .hamburg {
-        padding: 0px 0px;
+        height: 10%;
+        padding: 10px 10px;
     }
     .bande {
         height: 100px;
