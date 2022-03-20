@@ -17,10 +17,6 @@ body {
     text-align: center;
 }
 
-html {
-    --res: calc(0.01* 10vmin);
-}
-
 
 /* nav bar*/
 
@@ -33,7 +29,7 @@ header {
 nav {
     position: fixed;
     width: 100%;
-    top: -5.3%;
+    top: 0;
 }
 
 nav ul {

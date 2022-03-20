@@ -19,6 +19,7 @@ body {
 
 header {
     background: url(https://www.minecraft-france.fr/wp-content/uploads/2015/12/1421958294-herobrine.png);
+    background-position: center;
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -128,7 +129,6 @@ nav.scroll ul {
         margin-bottom: 200px;
     }
     header {
-        background: url(/assets/hero-phone.png);
         background-size: cover;
     }
     /*page de garde*/
