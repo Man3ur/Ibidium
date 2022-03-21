@@ -54,7 +54,7 @@
     @media(max-width: 1447px) {
         .hamburg {
             display: block;
-            padding: 8px 0px;
+            padding: 10px 10px;
         }
         nav.scroll ul {
             background-color: rgb(0, 0, 0);
