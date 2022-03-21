@@ -143,35 +143,6 @@ nav.scroll ul {
         margin-bottom: -75px;
     }
     /*page de garde*/
-    /*page-1*/
-    .page1 h1 {
-        font-size: 50px;
-        margin-left: 30px;
-    }
-    .page1 h1 {
-        font-size: 100px;
-        color: #000;
-        font-family: 'Montserrat', sans-serif;
-        text-align: left;
-        margin-left: 30px;
-    }
-    .page1 h2 {
-        font-size: 55px;
-        color: #000;
-        font-family: 'Montserrat', sans-serif;
-        text-align: left;
-        margin-left: 30px;
-    }
-    .page1 p {
-        font-size: 25px;
-        margin-top: 0;
-        margin-bottom: 0;
-        color: #000;
-        font-family: 'Montserrat', sans-serif;
-        text-align: left;
-        margin-left: 30px;
-    }
-    /*page-1*/
 }
 
 
@@ -519,6 +490,34 @@ p {
 /*Page-1*/
 
 @media(max-width: 800px) {
+    /*Page de garde*/
+    .modal {
+        opacity: 0;
+        width: 50%;
+        max-width: 90%;
+        min-width: 90%;
+        padding: 20px;
+        background: rgb(63, 2, 87);
+        border-radius: 20% 30px;
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, calc(-50% - 50px));
+        transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    }
+    .close-modal {
+        padding: 8px 10px;
+        border: none;
+        border-radius: 100% 30px;
+        font-size: 18px;
+        position: absolute;
+        top: 175px;
+        right: 10px;
+        cursor: pointer;
+        background: #ff365e;
+        color: #fff;
+    }
+    /*Page de garde*/
     /*page-1*/
     .page1 {
         width: 100%;
@@ -540,6 +539,7 @@ p {
         margin-left: 25px;
     }
     .page1 h3 {
+        font-weight: 200;
         font-size: 20px;
         margin-top: 0;
         margin-bottom: 0;
