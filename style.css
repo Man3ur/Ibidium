@@ -483,7 +483,7 @@
             background: rgb(63, 2, 87);
             border-radius: 0% 0px;
             position: absolute;
-            top: 51%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, calc(-50% - 50px));
             transition: opacity 0.4s ease-out, transform 0.4s ease-out;
@@ -494,7 +494,7 @@
             border-radius: 100% 30px;
             font-size: 18px;
             position: absolute;
-            top: 175px;
+            top: 180px;
             right: 10px;
             cursor: pointer;
             background: #ff365e;

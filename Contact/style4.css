@@ -136,17 +136,6 @@ nav.scroll ul {
     margin: 100px;
 }
 
-.centre h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: clamp(10px, 5vw, 18px);
-    color: #ffffff;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    margin: 20px;
-}
-
 .centre h3 {
     text-align: center;
     font-size: 15px;
@@ -166,4 +155,17 @@ nav.scroll ul {
     color: white;
     text-transform: uppercase;
     margin: 20px;
+    text-decoration: none;
+}
+
+.centre h4 a {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: clamp(10px, 5vw, 30px);
+    color: #ffffff;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin: 20px;
+    text-decoration: none;
 }
